@@ -1,4 +1,4 @@
-# Mnubo Client 1.0.0 
+# Mnubo Client 1.0.0
 
 The Mnubo client is an Electric Imp agent side library for interfacing to the Mnubo API v3. It only supports the `ingestion` (insertion of records) features and not the `restitution` (searching the records) features.
 
@@ -12,7 +12,7 @@ This class is ported from and designed to be as close as possible to the [JavaSc
 
 ### Constructor: Mnubo.Client(*ClientOptions*)
 
-The Mnubo client class is instantiated with a table of client options. The following fields are available: 
+The Mnubo client class is instantiated with a table of client options. The following fields are available:
 
 | key         | default         | notes                                                                               |
 | ----------- | --------------- | ----------------------------------------------------------------------------------- |
@@ -89,15 +89,15 @@ client.owners
   })
   .then(function(success, response) {
     server.log("Owner creation was successful");
-    
+
     // Claim an object on behalf of a user
     client.owners
       .claim("user@example.com", agentid)
       .then(function(response) {
         server.log("Object claim was successful");
       }.bindenv(this));
-    
-  }.bindenv(this)
+
+  }.bindenv(this))
 ```
 
 ## Authentication
