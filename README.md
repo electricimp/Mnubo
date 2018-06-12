@@ -1,8 +1,9 @@
-# Mnubo Client 1.0.0
+# Mnubo Client #
 
 The Mnubo client is an Electric Imp agent side library for interfacing to the Mnubo API v3. It only supports the `ingestion` (insertion of records) features and not the `restitution` (searching the records) features.
 
-**To add this library to your project, add `#require "mnubo.agent.nut:1.0.0"` to the top of your agent code.**
+**To add this library to your project, add** `#require "mnubo.agent.nut:1.0.0"` **to the top of your agent code.**
+
 **This library is dependant on the Promise library. Please also add `#require "promise.class.nut:1.0.0"` to the top of your agent code.**
 
 You can view the library's source code on [GitHub](https://github.com/electricimp/mnubo/tree/v1.0.0).
